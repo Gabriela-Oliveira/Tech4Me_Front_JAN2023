@@ -1,0 +1,16 @@
+input, textarea, select {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type=radio],
+input[type=checkbox] {
+    display: inline;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+textarea {
+    width: 300px;
+}
