@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+    color: rgb(5, 60, 105);
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(4, 94, 197);
+    margin: 0em;
+    margin-bottom: 2em;
+    padding: 1em;
+    color: rgb(228, 228, 228);
+}
+
+hr {
+    border-color: rgb(255, 255, 255);
+    margin: 2em;
+}
+
+#nome {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkStyle {
+    color: rgb(228, 228, 228);
+    padding: 20px;
+    margin: 1.5em;
+    border-radius: 2em;
+    background-color: rgb(157, 166, 174);
+    border-radius: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkStyle:hover {
+    background-color: rgb(4, 94, 197);
+    color: white;
+}
+
+footer {
+    color: rgb(152, 158, 162);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1em;
+}
+
+img {
+    width: 10em;
+    border-radius: 1em;
+    border: rgba(4, 94, 197, 0.274) solid;
+}
+
+p {
+    text-align: left;
+    padding: 2em;
+}
+
+#ficha {
+    display: flex;
+    margin-left: 2em;
+}
+
+table {
+    margin: auto;
+    margin-top: 2em;
+    background-color: rgb(236, 236, 236);
+
+
+}
+
+thead {
+    background-color: rgb(4, 94, 197);
+    color: rgb(228, 228, 228);
+}
+
+ol,ul{
+    display: table;
+    margin: auto;
+    text-align: left;
+}

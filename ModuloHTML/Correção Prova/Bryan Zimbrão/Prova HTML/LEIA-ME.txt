@@ -1,0 +1,6 @@
+Prof...
+
+Não consegui fazer a imagem aparecer ao abrir o arquivo HTML pelo navegador, somente pelo live server.
+
+A única forma que funcionou foi colocando o caminho da minha máquina de onde estava a foto, no caso o caminho desde a raiz "c/xxxx/xxxxx/xxxx/xxx/imagem.jpg", porém assim não adiantaria para você visualizar :(
+

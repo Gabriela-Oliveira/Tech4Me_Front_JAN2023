@@ -1,0 +1,59 @@
+h1 {
+    font-family:helvetica, serif;
+    display: flex;
+    justify-content: center;
+     flex-direction: row;
+}
+
+.div1 {
+    font-family:helvetica, serif;
+    display: flex;
+    justify-content: center;
+     flex-direction: row;
+}
+
+
+
+.imagensseries{
+    
+    display: flex;
+    flex-direction:row;
+    flex-wrap; wrap
+    justify-content:center;
+    left: 80px;;
+    top: 10px;;
+    right: 100px;
+    width: 400px;
+    padding: 5px;
+    height:200px;
+    border:10px solid; 
+    padding: 10px 15px;
+    vertical-align: middle; 
+    background:coral; 
+    color:coral;
+    border-radius:3px; 
+    font-size: 1px; 
+}
+
+
+.gostodefazer{
+    
+    display: flex;
+    flex-direction:row;
+    flex-wrap; wrap
+    justify-content:center;
+    left: 80px;;
+    top: 10px;;
+    right: 100px;
+    width: 1260px;
+    padding: 5px;
+    height:200px;
+    border:10px solid; 
+    padding: 10px 15px;
+    vertical-align: middle; 
+    background:coral; 
+    color:coral;
+    border-radius:3px; 
+    font-size: 1px; 
+}
+

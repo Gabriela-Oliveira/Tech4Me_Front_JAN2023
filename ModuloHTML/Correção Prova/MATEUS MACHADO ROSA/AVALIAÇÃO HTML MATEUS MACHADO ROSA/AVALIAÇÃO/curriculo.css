@@ -1,0 +1,75 @@
+html {
+
+    height: 100%;
+    min-height: 100%;
+}
+
+.infpessoais {
+    font-family:helvetica, serif;
+    display: flex;
+    justify-content: center;
+     flex-direction: row;
+}
+
+.fotomateus {
+    border:1px solid; 
+    padding: 5px 15px;
+    vertical-align: middle; 
+    background:black; 
+    color:coral;
+    border-radius:3px; 
+    font-size: 1px; 
+    font-family:helvetica, serif;
+    text-decoration:none;
+	position:absolute;
+	left: 80px;;
+	top: 30px;;
+    right: 200px;
+    width: 150px;
+    padding: 5px;
+    height:150px;  
+	}
+
+    table, th, td {
+        border: 1px solid;
+}
+
+.avancar {
+    text-decoration-style: ;
+    padding: 1px 5px; 
+    background:coral; 
+    border-color:coral;
+    color: black;
+    border-radius:10px; 
+    font-size: 15px; 
+    font-family:helvetica, serif;
+    text-decoration:none;
+    position:absolute;
+	left: 1780px;;
+	top: 950px;;
+}
+
+.voltar {
+    text-decoration-style: ;
+    padding: 1px 5px; 
+    background:coral; 
+    border-color:coral;
+    color: black;
+    border-radius:10px; 
+    font-size: 15px; 
+    font-family:helvetica, serif;
+    text-decoration:none;
+    position:absolute;
+	left: 1px;;
+	top: 950px;;
+}
+
+
+
+footer {
+    color: black;
+    font-family:helvetica, serif;
+    font-size: 12px;
+    margin-top: 100px;
+}
+

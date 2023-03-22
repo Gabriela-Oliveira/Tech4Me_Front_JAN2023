@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de dados</title>
+
+    <style>
+        div {
+            display: flex;
+        }
+        th, td {
+            font-size: 24px;
+            border: 1px solid black;
+            width: 50%;
+            height: 50px;
+            margin-bottom: auto;
+        }
+        td {
+            font-size: 22px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        button {
+            font-size: 16px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid rgb(168, 163, 163);
+            background-color: white;
+        }
+        button:hover{
+            border: 1px solid rgb(68, 66, 66);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Perguntas</th>
+                <th>Respostas</th>
+            </tr>
+            <tr>
+                <td>Qual é o seu nome?</td>
+                <td><button onclick="alert('Tipo: string (texto) -- Operações: Não')">Resposta</button></td>
+            </tr>
+                <td>Qual é a sua idade?</td>
+                <td><button onclick="alert('Tipo: Number (numero) -- Operações: Sim')">Resposta</button></td>
+            </tr> 
+            <tr>
+                <td>Thiago você tem irmãos?</td>
+                <td><button onclick="alert('Tipo: boolean (true / falso) -- Operações: Não')">Resposta</button></td>
+            </tr>
+            <tr>
+                <td>De quanto foi o desconto?</td>
+                <td><button onclick="alert('Tipo: float (numeros reais) -- Operações: Sim')">Resposta</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
