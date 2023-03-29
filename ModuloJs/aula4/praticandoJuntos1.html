@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emancipado</title>
+
+    <button onclick="emancipado()">Clique Aqui!</button>
+
+</head>
+<body>
+
+    <!-- 
+      -  se idade === 18 && sexo === "masculino"
+      -  se idade === 21 && sexo === "feminino"
+
+      feminino / 31
+    -->
+
+    <script>
+        function emancipado() {
+            var idade = prompt("Quanto anos você tem?");
+            var sexo = prompt("Qual é o seu sexo?");
+            var emancipado = (idade >= 18 && sexo === "masculino") || (idade >= 21 && sexo === "feminino")
+            
+            alert(emancipado);
+        }
+    </script>
+</body>
+</html>

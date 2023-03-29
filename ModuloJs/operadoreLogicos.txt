@@ -1,0 +1,4 @@
+Se (hoje === "domingo" && tempo === "Sol") -> Bora para o clube (oporador E)
+
+Se (jogoFlamengo === true || jogoBrasil === true) -> Bora de churras e uma gela
+
