@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+</head>
+<body>
+    <script>
+        function reajuste(salario) {
+            var aumento = 0;
+            var salarioAtual = 0;
+
+            if (salario <= 280) {
+                aumento = salario * (20/100)
+                salarioAtual = salario + aumento
+
+                alert('O salário antes do reajuste é de: ' + salario);
+                alert('O percentual aplicado foi de: 20%');
+                alert('O aumento foi de: ' + aumento);
+                alert('O salário atual é de: ' + salarioAtual);
+
+            } if (salario > 280 && salario < 700) {
+                aumento = salario * (15/100)
+                salarioAtual = salario + aumento
+
+                alert('O salário antes do reajuste é de: ' + salario);
+                alert('O percentual aplicado foi de: 15%');
+                alert('O aumento foi de: ' + aumento);
+                alert('O salário atual é de: ' + salarioAtual);
+
+            }if (salario > 700 && salario < 1500) {
+                aumento = salario * (10/100)
+                salarioAtual = salario + aumento
+
+                alert('O salário antes do reajuste é de: ' + salario);
+                alert('O percentual aplicado foi de: 10%');
+                alert('O aumento foi de: ' + aumento);
+                alert('O salário atual é de: ' + salarioAtual);
+            } else{
+                aumento = salario * (5/100)
+                salarioAtual = salario + aumento
+
+                alert('O salário antes do reajuste é de: ' + salario);
+                alert('O percentual aplicado foi de: 5%');
+                alert('O aumento foi de: ' + aumento);
+                alert('O salário atual é de: ' + salarioAtual);
+            }
+        }
+
+        reajuste(parseFloat(prompt('Qual é o seu salário?')));
+    </script>
+</body>
+</html>

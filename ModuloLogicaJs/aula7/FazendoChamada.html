@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function chamada() {
+            var alunos = []
+            var aluno = prompt("Nome do aluno?");
+
+            do {
+                aluno = prompt("Nome do aluno?");
+
+                if(aluno !== ""){
+                    alunos.push(aluno);
+                }
+
+                console.log(alunos);
+
+            } while (aluno !== "");           
+
+            
+            // while (aluno !== ""){
+            //     alunos.push(aluno);
+            //     aluno = prompt("Nome do aluno?");
+            // }
+
+            // return alunos;
+        }
+
+        function listarAlunos() {
+            chamada()
+        }
+
+        console.log(chamada());
+    </script>
+</body>
+</html>

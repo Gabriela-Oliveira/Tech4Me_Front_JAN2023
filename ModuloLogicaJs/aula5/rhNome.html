@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia seletiva com o RH</title>
+</head>
+<body>
+    <script>
+        // function processoSeletivo() {
+        //     var nome = prompt("Qual é o seu nome?");
+
+        //     var primeiraLetraNome = nome.substring(0, 1).toLowerCase();
+
+        //     if(primeiraLetraNome === "a" || primeiraLetraNome === "e" || primeiraLetraNome === "i" || primeiraLetraNome === "o" || primeiraLetraNome === "u") {
+        //         alert("Sua entrevista será segunda-feira!");
+        //     }else {
+        //         alert("Sua entrevista será terça-feira!");
+        //     }
+        // }
+        
+        // processoSeletivo();
+
+        function processoSeletivo(nomeParams, nomeParams1) {
+            var nome = nomeParams;
+
+            var primeiraLetraNome = nome.substring(0, 1).toLowerCase();
+
+            if(primeiraLetraNome === "a" || primeiraLetraNome === "e" || primeiraLetraNome === "i" || primeiraLetraNome === "o" || primeiraLetraNome === "u") {
+                alert("Sua entrevista será segunda-feira!");
+            }else {
+                alert("Sua entrevista será terça-feira!");
+            }
+        }
+        
+        processoSeletivo("Amanda");
+    </script>
+</body>
+</html>

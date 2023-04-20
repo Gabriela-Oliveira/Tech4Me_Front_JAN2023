@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição</title>
+</head>
+<body>
+    <!-- Eleição
+
+    Temos três candidatos A, B e C.  OK
+    Crie uma função que receba 10 votos e 
+    calcule o candidato 
+    vencedor, o vice e o perdedor.
+
+    ✅ Utilize o prompt(), para receber os votos.
+    ✅ Faça em duas versões. Utilizando o laço while e do…while. 
+    ✅ Imprima em um alert() com o candidato vencedor, o vice e o perdedor apresentando a somatória dos votos de cada um deles.
+   -->
+
+    <script>
+        var candidato = ""; 
+        var candidatoA = 0;
+        var candidatoB = 0;
+        var candidatoC = 0;
+        var contadora = 0
+
+        function votoEleicao() {
+            while (contadora < 10) {
+                candidato = prompt("De qual candidato A, B ou C é o seu voto?").toUpperCase();
+
+                if(candidato === "A") {
+                    candidatoA++
+                } else if(candidato === "B") {
+                    candidatoB++
+                } else if(candidato === "C") {
+                    candidatoC++
+                } else {
+                    alert("Ohhh vacilão, eu falei A, B ou C. Ai tu me mandas um: " + candidato + "?!!");
+                }
+
+                contadora++
+            }
+
+            console.log(candidatoA);
+            console.log(candidatoB);
+            console.log(candidatoC);
+
+            apuracaoVotos();
+
+        }
+
+        votoEleicao();
+
+        function apuracaoVotos() {
+            if(candidatoA > candidatoB && candidatoA > candidatoC){
+                alert('O candidato A é o vencedor');
+
+                if(candidatoB > candidatoC){
+                    alert('O candidato B é o vice');
+                    alert('O candidato C é o perdedor');
+                } else {
+                    alert('O candidato C é o vice');
+                    alert('O candidato B é o perdedor');
+                }
+            } else if(candidatoB > candidatoA && candidatoB > candidatoC){
+                alert('O candidato B é o vencedor');
+
+                if(candidatoA > candidatoC){
+                    alert('O candidato A é o vice');
+                    alert('O candidato C é o perdedor');
+                } else {
+                    alert('O candidato C é o vice');
+                    alert('O candidato A é o perdedor');
+                }
+            } else if(candidatoC > candidatoA && candidatoC > candidatoB){
+                alert('O candidato C é o vencedor');
+
+                if(candidatoA > candidatoB){
+                    alert('O candidato A é o vice');
+                    alert('O candidato B é o perdedor');
+                } else {
+                    alert('O candidato B é o vice');
+                    alert('O candidato A é o perdedor');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

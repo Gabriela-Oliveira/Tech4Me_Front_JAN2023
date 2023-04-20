@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota do fim de ano</title>
+</head>
+<body>
+    <script>
+        function media() {
+            var nota1 = parseFloat(prompt("Qual foi a sua primeira nota?"));
+            var nota2 = parseFloat(prompt("Qual foi a sua segunda nota?"));
+            var media = (nota1 + nota2) / 2;
+
+            console.log(media);
+
+            if (media >= 8) {
+                alert('Aprovado! Parabéns, você ficou acima da média!');
+
+            } if (media >= 7 && media < 8) {
+                alert('Aprovado! Mas foi raspando hein… Precisa estudar mais!');
+
+            } if (media < 7) {
+                alert('Reprovado! Infelizmente você não conseguiu, vai ter que melhorar para o ano que vem!');
+            }
+        }
+
+        media();
+    </script>
+</body>
+</html>

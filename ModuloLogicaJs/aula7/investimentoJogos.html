@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jagos</title>
+</head>
+<body>
+    <script>
+        function jagos() {
+            var qtdJogos = parseInt(prompt("Quantos jogos forão comprados?"));
+            var i = 1
+            var total = 0
+            var valor = 0
+
+            while (i === qtdJogos) {
+                valor = parseFloat(prompt('Qual foi o valor do jogo de número: ' + i));
+                total = total + valor
+                i++
+            }
+
+            alert('Total investido nos jogos é de: ' + total + ' *** ' + 'E a média de cada jogo é de: ' + total/qtdJogos);
+        }
+
+        // jagos();
+
+        function jagos1() {
+            var qtdJogos = parseInt(prompt("Quantos jogos forão comprados?"));
+            var i = 1
+            var total = 0
+            var valor = 0
+
+            do {
+                valor = parseFloat(prompt('Qual foi o valor do jogo de número: ' + i));
+                total = total + valor
+                i++
+            } while (i === qtdJogos);
+
+            alert('Total investido nos jogos é de: ' + total + ' *** ' + 'E a média de cada jogo é de: ' + total/qtdJogos);
+        }
+
+        jagos1();
+    </script>
+</body>
+</html>
