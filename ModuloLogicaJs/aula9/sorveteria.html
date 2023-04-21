@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria</title>
+</head>
+<body>
+    <script>
+        function sorveteria(){
+            const saborQtd = ["morango", 10, "Pistache", 8, "Chocolate", 20];
+            var res = Number(prompt(`olá digite de 1 a 3 para saber os sorvetes e suas quantidades!!`));
+
+            switch (res) {
+                case 1:
+                    console.log(`você digitou: ${res} o sabor é:${saborQtd[0]}, e tem ${saborQtd[1]} unidades`);
+
+                    console.log("você digitou: " + res + "o sabor é:" + saborQtd[0] + ", e tem" + saborQtd[1] + "unidades");
+                    break;
+                    case 2:
+                    console.log(`você digitou: ${res} o sabor é:${saborQtd[2]}, e tem ${saborQtd[3]} unidades`);
+                    break;
+                case 3:
+                    console.log(`você digitou: ${res} o sabor é:${saborQtd[4]}, e tem ${saborQtd[5]} unidades`);
+                    break;
+                default:
+                    console.log("Número digitado está incorreto, digite de 1 a 3");
+                    break
+                }
+        }
+
+        sorveteria()
+
+        while (condition) {
+            
+        }
+    </script>
+</body>
+</html>

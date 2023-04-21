@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1 - Varrer toda a lista
+        // function varrer() {
+        //     let lista = ['Adidas Breaknet', 'All Star', 'Adidas Superstar', 'Adidas Stan Smith', 'Air Force']
+
+        //     for (var i = 0; i < lista.length; i++) {
+        //         console.log(i);
+        //     }
+        // }
+
+        // varrer();
+
+        // // 2 - Extrair cada item a ser analisado
+        // function extrair() {
+        //     let lista = ['Adidas Breaknet', 'All Star', 'Adidas Superstar', 'Adidas Stan Smith', 'Air Force']
+
+        //     for (var i = 0; i < lista.length; i++) {
+        //         let tenis = lista[i]
+        //         console.log(tenis);
+        //     }
+        // }
+
+        // extrair();
+
+        // 3 - Estabelecer a condição de pesquisa / 4 - Processar o resultado
+        function extrair() {
+            let lista = ['Adidas Breaknet', 'All Star', 'Adidas Superstar', 'Adidas Stan Smith', 'Air Force']
+            var listaAddidas = []
+
+            for (var i = 0; i < lista.length; i++) {
+                let tenis = lista[i]
+                
+                if(tenis.indexOf("Adidas") === 0) {
+                    listaAddidas.push(tenis)
+                }
+            }
+            console.log(listaAddidas);
+        }
+
+        extrair();
+
+
+        //chave unica
+
+        function extrair1() {
+            let lista = ['Adidas Breaknet', 'All Star', 'Adidas Superstar', 'Adidas Stan Smith', 'Air Force']
+            var listaAddidas = []
+
+            for (var i = 0; i < lista.length; i++) {
+                let tenis = lista[i]
+                
+                console.log(i);
+                if(tenis.indexOf("All Star") === 0) {
+                    listaAddidas.push(tenis)
+                    break;
+                }
+            }
+            console.log(listaAddidas);
+        }
+
+        extrair1();
+    </script>
+</body>
+</html>
