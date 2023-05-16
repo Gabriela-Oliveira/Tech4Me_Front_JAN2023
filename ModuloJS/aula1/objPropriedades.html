@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de Objetos</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button id="mengo" onclick="addText()">Mengão Campião</button>
+
+    <script>
+        function addText() {
+            var text1 = document.getElementById("mengo").innerText;
+            console.log(text1);
+            var text2 = document.getElementById("demo").innerHTML = text1
+
+            console.log(text2);
+        }
+    </script>
+</body>
+</html>

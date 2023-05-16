@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get por ID</title>
+</head>
+<body>
+    <h2 id="id1" class="classe1">TESTE 1</h2>
+    <p id="id2" class="classe2">TESTE 2</p>
+    <div id="id3" class="classe3">TESTE 3</div>
+    <p id="id4" class="classe4">TESTE 4</p>
+    
+    <p class="classe3">TESTE 3</p>
+
+    <br>
+
+    <button onclick="addColor()">Cor</button>
+
+    <script>
+        function addColor() {
+            
+            document.getElementById("id1").style.color = "#ff0000"
+            document.getElementById("id2").style.color = "magenta"
+            document.getElementById("id3").style.color = "blue"
+            document.getElementById("id4").style.color = "lightblue"
+
+            const array = document.getElementsByClassName("classe3");
+            console.log(array);
+
+            // array[1].style.backgroundColor = "red";
+
+            for (let index = 0; index < array.length; index++) {
+                array[index].style.backgroundColor = "red";
+            }
+        }
+    </script>
+</body>
+</html>
