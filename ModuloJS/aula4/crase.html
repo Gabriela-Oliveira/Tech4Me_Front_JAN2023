@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpolação</title>
+</head>
+<body>
+    <script>
+        const frutas = ["🍌", "🍓", "🍍", "🍌", "🍉", "🍇", "🍌"];
+        const fn = (item) => item === "🍌";
+        const bananas = frutas.filter(fn);
+
+        console.log("Quantidade de bananas: " + bananas.length);
+        console.log(`Quantidade de bananas: ${bananas.length}`);
+
+        const texto = `
+        posso escrever
+            um texto com
+        quebra de linha no editor`
+
+        const texto1 = "posso escrever um texto com quebra de linha no editor"
+
+        console.log(texto);
+
+        console.log(`Resultado da soma de 2 + 2 = ${2 + 2}`);
+
+        const hora = 17;
+        const texto3 = `Tenha uma boa ${(() => {
+            if (hora > 18) return "noite";
+            return "tarde";
+        })()}`;
+
+        console.log(texto3);
+    </script>
+</body>
+</html>
