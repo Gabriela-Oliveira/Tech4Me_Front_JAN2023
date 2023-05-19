@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Elétricos</title>
+</head>
+<body>
+    <script>
+        class Carro {
+            constructor(nome, modelo, cor, placa, ano) {
+                this.nome = nome;
+                this.modelo = modelo;
+                this.cor = cor
+                this.placa = placa
+                this.ano = ano
+            }
+        }
+
+        class CarroEletrico extends Carro{
+            constructor(duracaoBat, nome, modelo, cor, placa, ano) {
+                super(nome, modelo, cor, placa, ano);
+
+                this.duracaoBateria = duracaoBat
+            }
+        }
+
+        let carroEletrico = new CarroEletrico("36h", "Fiat", "Uno", "Vermelha", "BRA5P63", 2020);
+
+        console.log(carroEletrico);
+    </script>
+</body>
+</html>
